@@ -6,10 +6,10 @@
 4) Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Objective
-Finance managers use Weel to stay on top of their team's expenses. Your challenge is to implement Weel's new transaction table to make it easy for finance managers to see what’s happening at a simple glance.
+To implement a transaction table to make it easy to see what’s happening at a simple glance.
 
 ## Requirements
-- Please implement a transaction table that displays the provided data. You should have the following columns in your table:
+- Please implement a transaction table that displays the provided data, Having the following columns in your table:
     - Status
     - Date
     - Merchant Name
@@ -21,7 +21,7 @@ Finance managers use Weel to stay on top of their team's expenses. Your challeng
     - Receipt (read-only checkbox)
     - Billable (checkbox)
 
-- Please implement a search feature that can take any input in the search bar and display any matching transactions in the table. Fields that should be searched are:
+- Implement a search feature that can take any input in the search bar and display any matching transactions in the table. Fields that should be searched are:
     - Merchant Name
     - Team Member
     - Category Name
@@ -29,15 +29,17 @@ Finance managers use Weel to stay on top of their team's expenses. Your challeng
     - Amount
     - GST   
 
-- Approach this app like it would be used in production by customers and worked on by other developers.
-- It should be well structured, fully tested, work according to the requirements and have no bugs.
-- Feel free to re-organise the folders, make new modules, and refactor as you see fit.
-- The app should look appealing and be easy to use for finance managers.
-- We ask that you don't use any libraries not already provided in the package.json to implement the functionality as we want to see your raw coding ability.
 
-## Required effort
-You should spend about 4 hours on this challenge. We are interested in seeing your problem solving ability, the structure and robustness of your code and design skills. Your solution does not need to look perfect, but it must be fully tested and work according to the requirements without any bugs.
+## Solutions
 
-## Resources
-- Here is the documentation for [React Testing Library](https://testing-library.com/docs/react-testing-library/intro), which is the testing library used for this challenge.
-- All sample data has been provided for you.
+1. Analyze and process the data to obtain an array suitable for generating tables directly. This involves completing corresponding helper functions, including testing.
+2. Utilize the obtained helper functions to process the raw data and generate React component tables.
+3. Implement a pagination component for facilitating pagination.
+4. Add filtering functionality components for the "status," "merchantName," "Category," and "budget" columns. These components should provide dropdown menu options for users to select for filtering. Upon selecting an option, the data should be filtered accordingly.
+5. Incorporate a search bar component, allowing users to search for team members, amount, and GST.
+6. Introduce a reset button for resetting the search functionality.
+7. Streamline the logic, particularly the sequence of data processing algorithms, to ensure proper functionality.
+8. Conduct refactoring work for continuous optimization.
+9. Enhance the UI by applying styling to improve visual appeal.
+10. Perform testing on each React component.
+
