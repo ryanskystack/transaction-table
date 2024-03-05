@@ -56,10 +56,10 @@ const Table = ({
         </tr>
       </thead>
       <tbody>
-        {data.map((item) => (
-          <StyledRow key={item.id}>
+        {data.map((item, index) => (
+          <StyledRow key={`${index}-${item.id}`}>
             {columnKeys.map((key) => (
-              <StyledCell key={`${item.id}-${key}`}>
+              <StyledCell key={`${index}-${key}-${item.id}`}>
                 {key === "receipt" || key === "billable" ? (
                   <input
                     type="checkbox"

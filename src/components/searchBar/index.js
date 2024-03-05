@@ -14,11 +14,11 @@ const SearchBar = ({
   };
 
   return (
-    <SearchForm onSubmit={handleSubmit}>
+    <SearchForm onSubmit={handleSubmit} data-testid="search-form">
       <SearchInput
         type="text"
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={event => setInputValue(event.target.value)}
         placeholder={placeholder}
       />
       <SearchButton type="submit">Search</SearchButton>

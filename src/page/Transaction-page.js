@@ -3,7 +3,7 @@ import transactionsData from "../data/transactions.json";
 import categoriesData from "../data/categories.json";
 import merchantsData from "../data/merchants.json";
 import Pagination from "../components/pagination";
-import Table from "../components/table";
+import Table from "../components/table/index.js";
 import SearchBar from "../components/searchBar";
 import {
   processTransactions,

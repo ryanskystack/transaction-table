@@ -1,6 +1,6 @@
 import { getUniqueValues } from "../../../src/utils";
 
-describe("getUniqueValues", () => {
+describe("utils - getUniqueValues", () => {
   it("should return unique values for a given key", () => {
     const array = [
       { name: "Alice", age: 20 },

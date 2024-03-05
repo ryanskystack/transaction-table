@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import FilterDropdown from "../../../src/components/FilterDropdown";
 
-describe("FilterDropdown", () => {
+describe("components - FilterDropdown", () => {
   it("renders correctly", () => {
     const options = ["Option 1", "Option 2", "Option 3"];
     const setSelectedOption = jest.fn();
