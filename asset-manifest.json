@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/transaction-table/static/css/main.34de6062.chunk.css",
+    "main.js": "/transaction-table/static/js/main.698b677f.chunk.js",
+    "main.js.map": "/transaction-table/static/js/main.698b677f.chunk.js.map",
+    "runtime~main.js": "/transaction-table/static/js/runtime~main.521fc8c8.js",
+    "runtime~main.js.map": "/transaction-table/static/js/runtime~main.521fc8c8.js.map",
+    "static/js/2.2a092bdb.chunk.js": "/transaction-table/static/js/2.2a092bdb.chunk.js",
+    "static/js/2.2a092bdb.chunk.js.map": "/transaction-table/static/js/2.2a092bdb.chunk.js.map",
+    "index.html": "/transaction-table/index.html",
+    "precache-manifest.73b15204d292a90d5cb01401755172fe.js": "/transaction-table/precache-manifest.73b15204d292a90d5cb01401755172fe.js",
+    "service-worker.js": "/transaction-table/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/transaction-table/static/css/main.34de6062.chunk.css.map"
+  }
+}
