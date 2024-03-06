@@ -17,7 +17,7 @@ const Table = ({
   handleBillableChange,
 }) => {
   return (
-    <StyledTable>
+    <StyledTable data-testid="table">
       <thead>
         <tr>
           {columnNames.map((name) => (

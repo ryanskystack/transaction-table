@@ -6,7 +6,7 @@ const Pagination = ({ totalItems, itemsPerPage, setCurrentPage }) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   return (
-    <PaginationBar>
+    <PaginationBar data-testid="pagination-bar">
       {Array(totalPages)
         .fill()
         .map((_, index) => (

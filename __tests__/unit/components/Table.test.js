@@ -35,11 +35,11 @@ describe("components - Table", () => {
 
         // Check that the correct number of rows are rendered
         const rows = getAllByRole("row");
-        expect(rows).toHaveLength(mockData.length + 1); // +1 for the header row
+        expect(rows).toHaveLength(mockData.length + 1);
 
         // Check that the correct number of cells are rendered
         const cells = getAllByRole("cell");
-        const expectedCells = Object.keys(mockData[0]).length * (mockData.length); // +1 for the header row
+        const expectedCells = Object.keys(mockData[0]).length * (mockData.length);
         expect(cells).toHaveLength(expectedCells);
     });
 });

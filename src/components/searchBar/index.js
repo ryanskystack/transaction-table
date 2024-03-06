@@ -16,12 +16,13 @@ const SearchBar = ({
   return (
     <SearchForm onSubmit={handleSubmit} data-testid="search-form">
       <SearchInput
+        data-testid="search-input"
         type="text"
         value={inputValue}
         onChange={event => setInputValue(event.target.value)}
         placeholder={placeholder}
       />
-      <SearchButton type="submit">Search</SearchButton>
+      <SearchButton type="submit" data-testid="search-button">Search</SearchButton>
     </SearchForm>
   );
 };

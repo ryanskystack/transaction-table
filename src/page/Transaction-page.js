@@ -19,6 +19,13 @@ import {
 const TransactionsTable = () => {
   const [transactions, setTransactions] = useState([]); //The total transactions which need to be kept in state
   const [displayedTransactions, setDisplayedTransactions] = useState([]); //The transactions to be displayed on the current page which are immutable
+
+  const [statuses, setStatuses] = useState([]); //The unique statuses which are used to filter the transactions
+  const [merchants, setMerchants] = useState([]); //The unique merchants which are used to filter the transactions
+  const [categories, setCategories] = useState([]); //The unique categories which are used to filter the transactions
+  const [budgets, setBudgets] = useState([]); //The unique budgets which are used to filter the transactions
+
+
   const [selectedStatus, setSelectedStatus] = useState(""); //The selected status which is used to filter the transactions
   const [selectedMerchant, setSelectedMerchant] = useState(""); //The selected merchant which is used to filter the transactions
   const [selectedCategory, setSelectedCategory] = useState(""); //The selected category which is used to filter the transactions
@@ -56,6 +63,9 @@ const TransactionsTable = () => {
   };
   // Process the transactions data and show it in the table when the component mounts
   useEffect(() => {
+    if (!transactionsData || !categoriesData || !merchantsData) {
+      return;
+    }
     const processedTransactions = processTransactions(
       transactionsData,
       categoriesData,
@@ -64,6 +74,19 @@ const TransactionsTable = () => {
 
     setTransactions(processedTransactions);
   }, []);
+
+  useEffect(() => {
+    const statuses = getUniqueValues(transactions, "status");
+    const budgets = getUniqueValues(transactions, "budget");
+    const categories = getUniqueValues(categoriesData, "name");
+    const merchants = getUniqueValues(merchantsData, "name");
+
+    setStatuses(statuses);
+    setMerchants(merchants);
+    setCategories(categories);
+    setBudgets(budgets);
+
+  }, [transactions]);
 
   // Update the displayed transactions when the transactions, selected status, selected merchant, selected category, or selected budget change
   useEffect(() => {
@@ -137,14 +160,11 @@ const TransactionsTable = () => {
     setCurrentPage(1);
   }, [selectedCategory, selectedStatus, selectedMerchant, selectedBudget]);
 
-  const statuses = getUniqueValues(transactions, "status");
-  const budgets = getUniqueValues(transactions, "budget");
-  const categories = getUniqueValues(categoriesData, "name");
-  const merchants = getUniqueValues(merchantsData, "name");
+
 
   return (
     <div>
-      <SearchBarContainer>
+      <SearchBarContainer data-testid="searchbar-container">
         <SearchBar
           setSearchQuery={setSearchQueryTeamMember}
           inputValue={teamMemberInput}

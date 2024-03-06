@@ -18,14 +18,6 @@ const Title = styled.h1`
 const App = () => (
   <PageContainer>
     <Title>Transactions</Title>
-
-    {/* <table>
-            <tbody>
-                <tr>
-                    <td>Complete</td>
-                </tr>
-            </tbody>
-        </table> */}
     <TransactionsTable />
   </PageContainer>
 );

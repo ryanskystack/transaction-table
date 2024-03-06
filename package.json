@@ -1,9 +1,10 @@
 {
-  "name": "divipay-frontend-challenge",
+  "name": "transaction-table",
   "version": "0.1.0",
-  "homepage": "https://ryanskystack.github.io/transaction-table",
+  "homepage": "https://ryanskystack.github.io/transaction-table/",
   "private": false,
   "dependencies": {
+    "jsdom": "^24.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -14,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "node --expose-gc ./node_modules/jest/bin/jest.js --runInBand",
+    "test": "node --expose-gc ./node_modules/jest/bin/jest.js --runInBand --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,11 +38,14 @@
     "@babel/preset-react": "^7.16.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "babel-jest": "^24.8.0",
     "gh-pages": "^6.1.1",
-    "jest": "24.7.1"
+    "jest": "24.7.1",
+    "jest-environment-jsdom-sixteen": "^2.0.0"
   },
   "jest": {
+    "testEnvironment": "jsdom-sixteen",
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest"
     },
