@@ -4,6 +4,7 @@
 2) Run `npm install` to install the dependencies
 3) Run `npm start` to run the app in development mode
 4) Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5) Test: npm run test
 
 ## Objective
 To implement a transaction table to make it easy to see what’s happening at a simple glance.
