@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/transaction-table/static/css/main.34de6062.chunk.css",
-    "main.js": "/transaction-table/static/js/main.fceb876c.chunk.js",
-    "main.js.map": "/transaction-table/static/js/main.fceb876c.chunk.js.map",
+    "main.js": "/transaction-table/static/js/main.96922a91.chunk.js",
+    "main.js.map": "/transaction-table/static/js/main.96922a91.chunk.js.map",
     "runtime~main.js": "/transaction-table/static/js/runtime~main.521fc8c8.js",
     "runtime~main.js.map": "/transaction-table/static/js/runtime~main.521fc8c8.js.map",
     "static/js/2.2a092bdb.chunk.js": "/transaction-table/static/js/2.2a092bdb.chunk.js",
     "static/js/2.2a092bdb.chunk.js.map": "/transaction-table/static/js/2.2a092bdb.chunk.js.map",
     "index.html": "/transaction-table/index.html",
-    "precache-manifest.a9a56186b4ff1a6d4753bd645be353c0.js": "/transaction-table/precache-manifest.a9a56186b4ff1a6d4753bd645be353c0.js",
+    "precache-manifest.febf4701a5d0c039ffb3bce70a14eb8f.js": "/transaction-table/precache-manifest.febf4701a5d0c039ffb3bce70a14eb8f.js",
     "service-worker.js": "/transaction-table/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/transaction-table/static/css/main.34de6062.chunk.css.map"
   }

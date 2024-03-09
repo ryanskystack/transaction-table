@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b854e2791f4d478a5be980051cc2b43",
+    "revision": "093d30a78c39b2f8d37b4b8f3b80761e",
     "url": "/transaction-table/index.html"
   },
   {
-    "revision": "2fd90ee1410f803a8183",
+    "revision": "d055cd9ee4af315865d7",
     "url": "/transaction-table/static/css/main.34de6062.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/transaction-table/static/js/2.2a092bdb.chunk.js"
   },
   {
-    "revision": "2fd90ee1410f803a8183",
-    "url": "/transaction-table/static/js/main.fceb876c.chunk.js"
+    "revision": "d055cd9ee4af315865d7",
+    "url": "/transaction-table/static/js/main.96922a91.chunk.js"
   },
   {
     "revision": "e195f37db5fcdf25f898",
