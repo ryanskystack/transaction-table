@@ -39,15 +39,16 @@ export const processTransactions = (
   merchantsData
 ) => {
   // Create a map of categories
-  const categoriesMap = categoriesData.reduce(
-    (map, category) => ({ ...map, [category.id]: category.name }),
-    {}
-  );
+  const categoriesMap = categoriesData.reduce((map, category) => {
+    map[category.id] = category.name;
+    return map
+  }, {})
+
   // Create a map of merchants
-  const merchantsMap = merchantsData.reduce(
-    (map, merchant) => ({ ...map, [merchant.id]: merchant.name }),
-    {}
-  );
+  const merchantsMap = merchantsData.reduce((map, merchant) => {
+    map[merchant.id] = merchant.name;
+    return map;
+  }, {});
 
   // Process the transactions data by replacing the category and merchant ids with their names using the maps created above
   const processedTransactions = transactionsData.map(
