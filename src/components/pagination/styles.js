@@ -7,15 +7,19 @@ export const PaginationBar = styled.div`
 `;
 
 export const PageButton = styled.button`
-  background-color: #f5f5f5;
+  background-color: ${props => props.selected ? '#333' : '#f5f5f5'};
   border: none;
-  color: #333;
+  color: ${props => props.selected ? '#f5f5f5' : '#333'};
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #ddd;
+    background-color: ${props => props.selected ? '#333' : '#ddd'};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `;

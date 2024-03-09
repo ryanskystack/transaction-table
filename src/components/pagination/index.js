@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { PaginationBar, PageButton } from "./styles";
 
-const Pagination = ({ totalItems, itemsPerPage, setCurrentPage }) => {
+const Pagination = ({ totalItems, itemsPerPage, currentPage, setCurrentPage }) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   return (
@@ -12,6 +12,8 @@ const Pagination = ({ totalItems, itemsPerPage, setCurrentPage }) => {
         .map((_, index) => (
           <PageButton
             key={`page-${index + 1}`}
+            selected={currentPage === index + 1}
+            disabled={currentPage === index + 1}
             onClick={() => setCurrentPage(index + 1)}>
             {index + 1}
           </PageButton>

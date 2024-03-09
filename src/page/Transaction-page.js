@@ -200,6 +200,7 @@ const TransactionsTable = () => {
       <Pagination
         totalItems={totalItems}
         itemsPerPage={itemsPerPage}
+        currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
     </div>
